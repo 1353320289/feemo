@@ -5,8 +5,8 @@ export PATH
 #	System Required: CentOS 7/8,Debian/ubuntu,oraclelinux
 #	Description: BBR+BBRplus+Lotserver
 #	Version: 100.0.2.7
-#	Author: 千影,cx9208,YLX
-#	更新内容及反馈:  https://blog.ylx.me/archives/783.html
+#	Author: FLL
+#	更新内容及反馈:  FLL
 #=================================================
 
 # RED='\033[0;31m'
@@ -1254,7 +1254,7 @@ net.ipv6.conf.default.accept_ra = 2" >>/etc/sysctl.d/99-sysctl.conf
 #开始菜单
 start_menu() {
   clear
-  echo && echo -e " TCP加速  ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} 
+  echo && echo -e " 加速工具 Feemo--方生  ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} 
  ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
  ${Green_font_prefix}9.${Font_color_suffix} 切换到卸载内核版本		${Green_font_prefix}10.${Font_color_suffix} 切换到一键DD系统脚本
  ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR原版内核		${Green_font_prefix}7.${Font_color_suffix} 安装 Zen官方版内核
