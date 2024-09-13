@@ -1,12 +1,6 @@
 /usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 导出路径
-#===================================================
-# 系统要求：CentOS 7/8、Debian/ubuntu、oraclelinux
-#描述：BBR+BBRplus+Lotserver
-# 版本：100.0.2.7
-#===================================================
-
 # 红色='\033[0;31m'
 # 绿色='\033[0;32m'
 # 黄色='\033[0;33m'
