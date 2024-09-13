@@ -1254,7 +1254,7 @@ net.ipv6.conf.default.accept_ra = 2" >>/etc/sysctl.d/99-sysctl.conf
 #开始菜单
 start_menu() {
   clear
-  echo && echo -e " TCP加速 一键安装管理脚本 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} from blog.ylx.me 母鸡慎用
+  echo && echo -e " TCP加速  ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} 
  ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
  ${Green_font_prefix}9.${Font_color_suffix} 切换到卸载内核版本		${Green_font_prefix}10.${Font_color_suffix} 切换到一键DD系统脚本
  ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR原版内核		${Green_font_prefix}7.${Font_color_suffix} 安装 Zen官方版内核
