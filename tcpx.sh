@@ -16,7 +16,7 @@ export PATH
 # PLAIN='\033[0m'
 
 sh_ver="100.0.2.7"
-github="raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master"
+github="raw.githubusercontent.com/1353320289/feemo/main"
 
 imgurl=""
 headurl=""
