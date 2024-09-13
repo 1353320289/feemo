@@ -15,7 +15,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 # PLAIN='\033[0m'
 
 sh_ver="100.0.2.7"
-github="raw.githubusercontent.com/1353320289/feemo/main"
+github="https://raw.githubusercontent.com/1353320289/feemo/main/tcpx.sh"
 
 imgurl=""
 标题网址=""
