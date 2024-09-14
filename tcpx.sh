@@ -1257,11 +1257,10 @@ start_menu() {
   clear 
     echo "#############################################################"
     echo -e "#Feemo 方生--加速器 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} #"
-    echo -e "# ${GREEN}作者${PLAIN}: FLL                                                 #"
-    echo -e "# ${GREEN}维护${PLAIN}: FLL                                                 #"
-    echo -e "# ${GREEN}注意${PLAIN}: 仅供学习交流 严禁用于商业用途--Feemo                 #"
-    echo -e "# ${GREEN}备注${PLAIN}: Feemo内部使用                                       #"                    
-    echo -e "# ${RED}多协议可选择！！！${PLAIN}                                         #"                      
+    echo -e "#  ${Green_font_prefix}作者${Font_color_suffix}: FLL                                                 #"
+    echo -e "# ${Green_font_prefix}维护${Font_color_suffix}: FLL                                                 #"
+    echo -e "# ${Green_font_prefix}注意${Font_color_suffix}: 仅供学习交流 严禁用于商业用途--Feemo                 #"
+    echo -e "# ${Green_font_prefix}备注${Font_color_suffix}: Feemo内部使用                                       #"                                       
     echo "#############################################################"
   
  ${Red_font_prefix}[v${sh_ver}] 仅供学习交流,严禁用于商业用途--Feemo${Font_color_suffix}
