@@ -1254,8 +1254,16 @@ net.ipv6.conf.default.accept_ra = 2" >>/etc/sysctl.d/99-sysctl.conf
 
 #开始菜单
 start_menu() {
-  clear
-  echo && echo -e " Feemo 方生--加速器 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} 
+  clear 
+    echo "#############################################################"
+    echo -e "#echo && echo -e " Feemo 方生--加速器 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} #"
+    echo -e "# ${GREEN}作者${PLAIN}: FLL                                                 #"
+    echo -e "# ${GREEN}维护${PLAIN}: FLL                                                 #"
+    echo -e "# ${GREEN}注意${PLAIN}: 仅供学习交流 严禁用于商业用途--Feemo                 #"
+    echo -e "# ${GREEN}备注${PLAIN}: Feemo内部使用                                       #"                    
+    echo -e "# ${RED}多协议可选择！！！${PLAIN}                                         #"                      
+    echo "#############################################################"
+  
  ${Red_font_prefix}[v${sh_ver}] 仅供学习交流,严禁用于商业用途--Feemo${Font_color_suffix}
  ${Green_font_prefix}1.${Font_color_suffix}  安装 BBR原版内核
  ${Green_font_prefix}2.${Font_color_suffix}  安装 BBRplus版内核		
