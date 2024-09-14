@@ -1256,7 +1256,7 @@ net.ipv6.conf.default.accept_ra = 2" >>/etc/sysctl.d/99-sysctl.conf
 start_menu() {
   clear 
     echo "#############################################################"
-    echo -e "#echo && echo -e " Feemo 方生--加速器 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} #"
+    echo -e "#Feemo 方生--加速器 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} #"
     echo -e "# ${GREEN}作者${PLAIN}: FLL                                                 #"
     echo -e "# ${GREEN}维护${PLAIN}: FLL                                                 #"
     echo -e "# ${GREEN}注意${PLAIN}: 仅供学习交流 严禁用于商业用途--Feemo                 #"
