@@ -1830,12 +1830,12 @@ showLog() {
 menu() {
     clear
     echo "#############################################################"
-    echo -e "#                   ${RED}Feemo--VPS协议安装${PLAIN}                 #"
-    echo -e "# ${GREEN}作者${PLAIN}: FLL                                         #"
-    echo -e "# ${GREEN}维护${PLAIN}: FLL                                        #"
-    echo -e "# ${GREEN}注意${PLAIN}: 仅供学习交流 严禁用于商业用途--Feemo         #"
-    echo -e "# ${GREEN}备注${PLAIN}: Feemo内部使用                              #"                    
-    echo -e "# 多${GREEN}协议${PLAIN}选择！！！                                 #"                      
+    echo -e "#                   ${RED}Feemo--VPS协议安装${PLAIN}                       #"
+    echo -e "# ${GREEN}作者${PLAIN}: FLL                                               #"
+    echo -e "# ${GREEN}维护${PLAIN}: FLL                                               #"
+    echo -e "# ${GREEN}注意${PLAIN}: 仅供学习交流 严禁用于商业用途--Feemo                 #"
+    echo -e "# ${GREEN}备注${PLAIN}: Feemo内部使用                                      #"                    
+    echo -e "# 多${GREEN}协议${PLAIN}选择！！！                                         #"                      
     echo "#############################################################"
 
     echo -e "  ${GREEN}1.${PLAIN}   安装V2ray-VMESS"
