@@ -1256,18 +1256,23 @@ net.ipv6.conf.default.accept_ra = 2" >>/etc/sysctl.d/99-sysctl.conf
 start_menu() {
   clear
   echo && echo -e " Feemo 方生--加速器 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} 
-  ${Red_font_prefix}[v${sh_ver}] 仅供学习交流,严禁用于商业用途--Feemo${Font_color_suffix}
+ 仅供学习交流,严禁用于商业用途--Feemo${Font_color_suffix}
  ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR原版内核
- ${Green_font_prefix}2.${Font_color_suffix} 安装 BBRplus版内核		${Green_font_prefix}5.${Font_color_suffix} 安装 BBRplus新版内核
+ ${Green_font_prefix}2.${Font_color_suffix} 安装 BBRplus版内核		
  ${Green_font_prefix}3.${Font_color_suffix} 安装 Lotserver(锐速)内核
- ${Green_font_prefix}11.${Font_color_suffix} 使用BBR+FQ加速		${Green_font_prefix}12.${Font_color_suffix} 使用BBR+FQ_PIE加速 
- ${Green_font_prefix}13.${Font_color_suffix} 使用BBR+CAKE加速
- ${Green_font_prefix}14.${Font_color_suffix} 使用BBR2+FQ加速	 	${Green_font_prefix}15.${Font_color_suffix} 使用BBR2+FQ_PIE加速 
- ${Green_font_prefix}16.${Font_color_suffix} 使用BBR2+CAKE加速
- ${Green_font_prefix}17.${Font_color_suffix} 开启ECN	 		
- ${Green_font_prefix}19.${Font_color_suffix} 使用BBRplus+FQ版加速       ${Green_font_prefix}20.${Font_color_suffix} 使用Lotserver(锐速)加速
- ${Green_font_prefix}51.${Font_color_suffix} 查看排序内核               ${Green_font_prefix}52.${Font_color_suffix} 删除保留指定内核
- ${Green_font_prefix}25.${Font_color_suffix} 卸载全部加速	 	${Green_font_prefix}99.${Font_color_suffix} 退出脚本 
+ ${Green_font_prefix}4.${Font_color_suffix} 安装 BBRplus新版内核
+ ${Green_font_prefix}5.${Font_color_suffix} 使用BBR+FQ加速
+ ${Green_font_prefix}6.${Font_color_suffix} 使用BBR+FQ_PIE加速 
+ ${Green_font_prefix}7.${Font_color_suffix} 使用BBR+CAKE加速
+ ${Green_font_prefix}8.${Font_color_suffix} 使用BBR2+FQ加速
+ ${Green_font_prefix}9.${Font_color_suffix} 使用BBR2+FQ_PIE加速
+ ${Green_font_prefix}10.${Font_color_suffix} 使用BBR2+CAKE加速	 		
+ ${Green_font_prefix}11.${Font_color_suffix} 使用BBRplus+FQ版加速
+ ${Green_font_prefix}12.${Font_color_suffix} 使用Lotserver(锐速)加速
+ ${Green_font_prefix}13.${Font_color_suffix} 查看排序内核
+ ${Green_font_prefix}14.${Font_color_suffix} 删除保留指定内核
+ ${Green_font_prefix}15.${Font_color_suffix} 卸载全部加速
+ ${Green_font_prefix}99.${Font_color_suffix} 退出脚本
 ————————————————————————————————————————————————————————————————" &&
     check_status
   get_system_info
