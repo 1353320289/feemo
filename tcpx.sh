@@ -1288,9 +1288,6 @@ start_menu() {
 
   read -p " 请输入数字 :" num
   case "$num" in
-  0)
-    Update_Shell
-    ;;
   1)
     check_sys_bbr
     ;;
@@ -1300,85 +1297,43 @@ start_menu() {
   3)
     check_sys_Lotsever
     ;;
-  5)
+  4)
     check_sys_bbrplusnew
     ;;
-  7)
-    check_sys_official_zen
-    ;;
-  30)
-    check_sys_official
-    ;;
-  31)
-    check_sys_official_bbr
-    ;;
-  32)
-    check_sys_official_xanmod_main
-    ;;
-  33)
-    check_sys_official_xanmod_lts
-    ;;
-  36)
-    check_sys_official_xanmod_edge
-    ;;
-  9)
-    gototcp
-    ;;
-  10)
-    gotodd
-    ;;
-  11)
+  5)
     startbbrfq
     ;;
-  12)
+  6)
     startbbrfqpie
     ;;
-  13)
+  7)
     startbbrcake
     ;;
-  14)
+  8)
     startbbr2fq
     ;;
-  15)
+  9)
     startbbr2fqpie
     ;;
-  16)
+  10)
     startbbr2cake
     ;;
-  17)
-    startecn
-    ;;
-  18)
-    closeecn
-    ;;
-  19)
+  11)
     startbbrplus
     ;;
-  20)
+  12)
     startlotserver
     ;;
   21)
     optimizing_system
     ;;
-  22)
-    optimizing_system_johnrosen1
-    ;;
-  23)
-    closeipv6
-    ;;
-  24)
-    openipv6
-    ;;
-  25)
+  15)
     remove_all
     ;;
-  26)
-    optimizing_ddcc
-    ;;
-  51)
+  13)
     BBR_grub
     ;;
-  52)
+  14)
     detele_kernel_custom
     ;;
   99)
@@ -1386,7 +1341,7 @@ start_menu() {
     ;;
   *)
     clear
-    echo -e "${Error}:请输入正确数字 [0-99]"
+    echo -e "${Error}:请输入正确数字 "
     sleep 5s
     start_menu
     ;;
