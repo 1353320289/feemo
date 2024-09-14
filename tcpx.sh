@@ -1255,9 +1255,9 @@ net.ipv6.conf.default.accept_ra = 2" >>/etc/sysctl.d/99-sysctl.conf
 start_menu() {
   clear
     echo "#############################################################"
-    echo -e "#                   ${RED}v2ray一键安装脚本${PLAIN}                       #"
-    echo -e "# ${GREEN}作者${PLAIN}: 网络跳越(hijk)                                      #"
-    echo -e "# ${GREEN}维护${PLAIN}: ifeng                                               #"	
+    echo -e                   ${Green_font_prefix}v2ray一键安装脚本${Font_color_suffix}                   
+    echo -e  ${GREEN}作者${PLAIN}: 网络跳越(hijk)                                     
+    echo -e  ${GREEN}维护${PLAIN}: ifeng                                               	
     echo "#############################################################"
   echo && echo -e " Feemo 方生--加速器 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix}
  ${Red_font_prefix}[v${sh_ver}] 仅供学习交流,严禁用于商业用途--Feemo${Font_color_suffix}
