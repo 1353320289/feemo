@@ -40,7 +40,7 @@ checkv4v6(){
     v4=$(curl -s4m8 api64.ipify.org -k)
 }
 
-colorEcho $YELLOW "${GREEN}FEEMO1.${PLAIN} 正在检查VPS的IP配置环境, 请稍等..." && sleep 1
+colorEcho $YELLOW "FEEMO 正在检查VPS的IP配置环境, 请稍等..." && sleep 1
 WgcfIPv4Status=$(curl -s4m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2)
 WgcfIPv6Status=$(curl -s6m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2)
 if [[ $WgcfIPv4Status =~ "on"|"plus" ]] || [[ $WgcfIPv6Status =~ "on"|"plus" ]]; then
