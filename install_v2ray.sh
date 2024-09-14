@@ -40,7 +40,7 @@ checkv4v6(){
     v4=$(curl -s4m8 api64.ipify.org -k)
 }
 
-colorEcho $YELLOW "正在检查VPS的IP配置环境, 请稍等..." && sleep 1
+colorEcho $YELLOW "FEEMO 正在检查VPS的IP配置环境, 请稍等..." && sleep 1
 WgcfIPv4Status=$(curl -s4m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2)
 WgcfIPv6Status=$(curl -s6m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2)
 if [[ $WgcfIPv4Status =~ "on"|"plus" ]] || [[ $WgcfIPv6Status =~ "on"|"plus" ]]; then
@@ -1830,12 +1830,12 @@ showLog() {
 menu() {
     clear
     echo "#############################################################"
-    echo -e "#                   ${RED}Feemo--VPS协议安装${PLAIN}                        #"
-    echo -e "# ${GREEN}作者${PLAIN}: FLL                                                #"
-    echo -e "# ${GREEN}维护${PLAIN}: FLL                                                #"
-    echo -e "# ${GREEN}注意${PLAIN}: 仅供学习交流 严禁用于商业用途--Feemo                  #"
-    echo -e "# ${GREEN}备注${PLAIN}: Feemo内部使用                                      #"                    
-    echo -e "# ${RED}多协议可选择！！！${PLAIN}                                         #"                      
+    echo -e "#                   ${RED}Feemo--VPS协议安装${PLAIN}                         #"
+    echo -e "# ${GREEN}作者${PLAIN}: FLL                                                 #"
+    echo -e "# ${GREEN}维护${PLAIN}: FLL                                                 #"
+    echo -e "# ${GREEN}注意${PLAIN}: 仅供学习交流 严禁用于商业用途--Feemo                   #"
+    echo -e "# ${GREEN}备注${PLAIN}: Feemo内部使用                                       #"                    
+    echo -e "# ${RED}多协议可选择！！！${PLAIN}                                          #"                      
     echo "#############################################################"
 
      echo -e "  ${GREEN}1.${PLAIN}   安装V2ray-${RED}VMESS${PLAIN}"   
@@ -1872,6 +1872,7 @@ menu() {
     echo -n " 当前状态："
     statusText
     echo 
+    echo -e "# ${GREEN}备注${PLAIN}: Feemo内部使用                                       #"      
 
     read -p " 请选择操作[0-17]：" answer
     case $answer in
