@@ -1268,7 +1268,7 @@ start_menu() {
  ${Green_font_prefix}9.${Font_color_suffix}  使用BBR2+FQ_PIE加速
  ${Green_font_prefix}10.${Font_color_suffix} 使用BBR2+CAKE加速	 		
  ${Green_font_prefix}11.${Font_color_suffix} 使用BBRplus+FQ版加速
- ${Green_font_prefix}12.${Font_color_suffix} 使用Lotserver"(锐速)"加速
+ ${Green_font_prefix}12.${Font_color_suffix} 使用Lotserver(锐速)加速
  ${Green_font_prefix}13.${Font_color_suffix} 查看排序内核
  ${Green_font_prefix}14.${Font_color_suffix} 删除保留指定内核
  ${Green_font_prefix}15.${Font_color_suffix} 卸载全部加速
