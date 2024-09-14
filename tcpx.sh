@@ -1259,7 +1259,7 @@ start_menu() {
  ${Red_font_prefix}仅供学习交流,严禁用于商业用途--Feemo${Font_color_suffix}
  ${Green_font_prefix}1.${Font_color_suffix}  安装 BBR原版内核
  ${Green_font_prefix}2.${Font_color_suffix}  安装 BBRplus版内核		
- ${Green_font_prefix}3.${Font_color_suffix}  安装 Lotserver(锐速)内核
+ ${Green_font_prefix}3.${Font_color_suffix}  安装 Lotserver
  ${Green_font_prefix}4.${Font_color_suffix}  安装 BBRplus新版内核
  ${Green_font_prefix}5.${Font_color_suffix}  使用BBR+FQ加速
  ${Green_font_prefix}6.${Font_color_suffix}  使用BBR+FQ_PIE加速 
@@ -1268,7 +1268,7 @@ start_menu() {
  ${Green_font_prefix}9.${Font_color_suffix}  使用BBR2+FQ_PIE加速
  ${Green_font_prefix}10.${Font_color_suffix} 使用BBR2+CAKE加速	 		
  ${Green_font_prefix}11.${Font_color_suffix} 使用BBRplus+FQ版加速
- ${Green_font_prefix}12.${Font_color_suffix} 使用Lotserver(锐速)加速
+ ${Green_font_prefix}12.${Font_color_suffix} 使用Lotserver加速
  ${Green_font_prefix}13.${Font_color_suffix} 查看排序内核
  ${Green_font_prefix}14.${Font_color_suffix} 删除保留指定内核
  ${Green_font_prefix}15.${Font_color_suffix} 卸载全部加速
