@@ -1,5 +1,5 @@
 #!/bin/bash
-# v2ray一键安装脚本
+# 自己用的V2--Feemo 方生
 # Modify by ifeng<https://www.hicairo.com>
 
 RED="\033[31m"      # Error message
@@ -11,9 +11,6 @@ PLAIN='\033[0m'
 colorEcho() {
     echo -e "${1}${@:2}${PLAIN}"
 }
-
-# 以下网站是随机从Google上找到的无广告小说网站，不喜欢请改成其他网址，以http或https开头
-# 搭建好后无法打开伪装域名，可能是反代小说网站挂了，请在网站留言，或者Github发issue，以便替换新的网站
 SITES=(
 	https://www.ruiwen.com/
 	https://www.ihuaben.com/
