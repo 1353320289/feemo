@@ -1588,7 +1588,7 @@ check_sys() {
       elif [ "${Var_VirtType}" = "lxc" ]; then
         virtual="LXC"
       elif [ "${Var_VirtType}" = "lxc-libvirt" ]; then
-        virtual="LXC (libvirt)"
+        virtual="LXC "
       elif [ "${Var_VirtType}" = "systemd-nspawn" ]; then
         virtual="Systemd nspawn"
       elif [ "${Var_VirtType}" = "docker" ]; then
