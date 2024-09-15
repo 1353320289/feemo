@@ -1597,7 +1597,7 @@ check_sys() {
       # 特殊处理
       elif [ -c "/dev/lxss" ]; then # 处理WSL虚拟化
         Var_VirtType="wsl"
-        virtual="Windows Subsystem for Linux (WSL)"
+        virtual="Windows Subsystem for Linux WSL"
       # 未匹配到任何结果, 或者非虚拟机
       elif [ "${Var_VirtType}" = "none" ]; then
         Var_VirtType="dedicated"
@@ -1620,7 +1620,7 @@ check_sys() {
       virtual="Docker"
     elif [ -c "/dev/lxss" ]; then # 处理WSL虚拟化
       Var_VirtType="wsl"
-      virtual="Windows Subsystem for Linux (WSL)"
+      virtual="Windows Subsystem for Linux WSL"
     else # 正常判断流程
       Var_VirtType="$(virt-what | xargs)"
       local Var_VirtTypeCount
