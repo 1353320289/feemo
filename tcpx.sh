@@ -1254,24 +1254,29 @@ net.ipv6.conf.default.accept_ra = 2" >>/etc/sysctl.d/99-sysctl.conf
 #开始菜单
 start_menu() {
   clear
-  echo && echo -e " TCP加速 一键安装管理脚本 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix} from blog.ylx.me 母鸡慎用
- ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
- ${Green_font_prefix}9.${Font_color_suffix} 切换到卸载内核版本		${Green_font_prefix}10.${Font_color_suffix} 切换到一键DD系统脚本
- ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR原版内核		${Green_font_prefix}7.${Font_color_suffix} 安装 Zen官方版内核
- ${Green_font_prefix}2.${Font_color_suffix} 安装 BBRplus版内核		${Green_font_prefix}5.${Font_color_suffix} 安装 BBRplus新版内核
- ${Green_font_prefix}3.${Font_color_suffix} 安装 Lotserver(锐速)内核	${Green_font_prefix}36.${Font_color_suffix} 安装 XANMOD官方内核(EDGE)
- ${Green_font_prefix}30.${Font_color_suffix} 安装 官方稳定内核		${Green_font_prefix}31.${Font_color_suffix} 安装 官方最新内核 backports/elrepo
- ${Green_font_prefix}32.${Font_color_suffix} 安装 XANMOD官方内核(main)	${Green_font_prefix}33.${Font_color_suffix} 安装 XANMOD官方内核(LTS)
- ${Green_font_prefix}11.${Font_color_suffix} 使用BBR+FQ加速		${Green_font_prefix}12.${Font_color_suffix} 使用BBR+FQ_PIE加速 
- ${Green_font_prefix}13.${Font_color_suffix} 使用BBR+CAKE加速
- ${Green_font_prefix}14.${Font_color_suffix} 使用BBR2+FQ加速	 	${Green_font_prefix}15.${Font_color_suffix} 使用BBR2+FQ_PIE加速 
- ${Green_font_prefix}16.${Font_color_suffix} 使用BBR2+CAKE加速
- ${Green_font_prefix}17.${Font_color_suffix} 开启ECN	 		${Green_font_prefix}18.${Font_color_suffix} 关闭ECN
- ${Green_font_prefix}19.${Font_color_suffix} 使用BBRplus+FQ版加速       ${Green_font_prefix}20.${Font_color_suffix} 使用Lotserver(锐速)加速
- ${Green_font_prefix}21.${Font_color_suffix} 系统配置优化	 	${Green_font_prefix}22.${Font_color_suffix} 应用优化方案2
- ${Green_font_prefix}23.${Font_color_suffix} 禁用IPv6	 		${Green_font_prefix}24.${Font_color_suffix} 开启IPv6
- ${Green_font_prefix}51.${Font_color_suffix} 查看排序内核               ${Green_font_prefix}52.${Font_color_suffix} 删除保留指定内核
- ${Green_font_prefix}25.${Font_color_suffix} 卸载全部加速	 	${Green_font_prefix}99.${Font_color_suffix} 退出脚本 
+    echo "#############################################################"
+    echo -e "${YELLOW}\u2605${NC}"${Green_font_prefix}Feemo 方生--加速器 ${Red_font_prefix}[v${sh_ver}] 不卸内核${Font_color_suffix}${Font_color_suffix}
+    echo -e "${YELLOW}\u2605${NC}"${Green_font_prefix}作者${Font_color_suffix}: FLL 
+    echo -e "${YELLOW}\u2605${NC}"${Green_font_prefix}维护${Font_color_suffix}: FLL 
+    echo -e "${YELLOW}\u2605${NC}"${Red_font_prefix}仅供学习交流,严禁用于商业用途--Feemo${Font_color_suffix}
+    echo "#############################################################"
+ ${Green_font_prefix}1.${Font_color_suffix}  安装 BBR原版内核
+ ${Green_font_prefix}2.${Font_color_suffix}  安装 BBRplus版内核		
+ ${Green_font_prefix}3.${Font_color_suffix}  安装 Lotserver
+ ${Green_font_prefix}4.${Font_color_suffix}  安装 BBRplus新版内核
+ ${Green_font_prefix}5.${Font_color_suffix}  使用BBR+FQ加速
+ ${Green_font_prefix}6.${Font_color_suffix}  使用BBR+FQ_PIE加速 
+ ${Green_font_prefix}7.${Font_color_suffix}  使用BBR+CAKE加速
+ ${Green_font_prefix}8.${Font_color_suffix}  使用BBR2+FQ加速
+ ${Green_font_prefix}9.${Font_color_suffix}  使用BBR2+FQ_PIE加速
+ ${Green_font_prefix}10.${Font_color_suffix} 使用BBR2+CAKE加速	 		
+ ${Green_font_prefix}11.${Font_color_suffix} 使用BBRplus+FQ版加速
+ ${Green_font_prefix}12.${Font_color_suffix} 使用Lotserver加速
+ ${Green_font_prefix}13.${Font_color_suffix} 查看排序内核
+ ${Green_font_prefix}14.${Font_color_suffix} 删除保留指定内核
+ ${Green_font_prefix}15.${Font_color_suffix} 卸载全部加速
+ ${Green_font_prefix}99.${Font_color_suffix} 退出脚本
+ ${Red_font_prefix}[v${sh_ver}] 仅供学习交流,严禁用于商业用途--Feemo${Font_color_suffix}
 ————————————————————————————————————————————————————————————————" &&
     check_status
   get_system_info
@@ -1286,9 +1291,6 @@ start_menu() {
 
   read -p " 请输入数字 :" num
   case "$num" in
-  0)
-    Update_Shell
-    ;;
   1)
     check_sys_bbr
     ;;
@@ -1298,85 +1300,43 @@ start_menu() {
   3)
     check_sys_Lotsever
     ;;
-  5)
+  4)
     check_sys_bbrplusnew
     ;;
-  7)
-    check_sys_official_zen
-    ;;
-  30)
-    check_sys_official
-    ;;
-  31)
-    check_sys_official_bbr
-    ;;
-  32)
-    check_sys_official_xanmod_main
-    ;;
-  33)
-    check_sys_official_xanmod_lts
-    ;;
-  36)
-    check_sys_official_xanmod_edge
-    ;;
-  9)
-    gototcp
-    ;;
-  10)
-    gotodd
-    ;;
-  11)
+  5)
     startbbrfq
     ;;
-  12)
+  6)
     startbbrfqpie
     ;;
-  13)
+  7)
     startbbrcake
     ;;
-  14)
+  8)
     startbbr2fq
     ;;
-  15)
+  9)
     startbbr2fqpie
     ;;
-  16)
+  10)
     startbbr2cake
     ;;
-  17)
-    startecn
-    ;;
-  18)
-    closeecn
-    ;;
-  19)
+  11)
     startbbrplus
     ;;
-  20)
+  12)
     startlotserver
     ;;
   21)
     optimizing_system
     ;;
-  22)
-    optimizing_system_johnrosen1
-    ;;
-  23)
-    closeipv6
-    ;;
-  24)
-    openipv6
-    ;;
-  25)
+  15)
     remove_all
     ;;
-  26)
-    optimizing_ddcc
-    ;;
-  51)
+  13)
     BBR_grub
     ;;
-  52)
+  14)
     detele_kernel_custom
     ;;
   99)
@@ -1384,7 +1344,7 @@ start_menu() {
     ;;
   *)
     clear
-    echo -e "${Error}:请输入正确数字 [0-99]"
+    echo -e "${Error}:请输入正确数字 "
     sleep 5s
     start_menu
     ;;
