@@ -1,6 +1,6 @@
 #!/bin/bash
 # 自己用的V2--Feemo 方生
-# by FLL
+# by Feemo 方生
 
 RED="\033[31m"      # Error message
 GREEN="\033[32m"    # Success message
@@ -1831,8 +1831,8 @@ menu() {
     clear
     echo "#############################################################"
     echo -e "#                   ${RED}Feemo--VPS协议安装${PLAIN}                       #"
-    echo -e "# ${GREEN}作者${PLAIN}: FLL                                                 #"
-    echo -e "# ${GREEN}维护${PLAIN}: FLL                                                 #"
+    echo -e "# ${GREEN}作者${PLAIN}: Feemo 方生                                                 #"
+    echo -e "# ${GREEN}维护${PLAIN}: Feemo 方生                                                 #"
     echo -e "# ${GREEN}注意${PLAIN}: 仅供学习交流 严禁用于商业用途--Feemo                 #"
     echo -e "# ${GREEN}备注${PLAIN}: Feemo内部使用                                       #"                    
     echo -e "# ${RED}多协议可选择！！！${PLAIN}                                         #"                      
